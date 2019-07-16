@@ -108,4 +108,21 @@ print test_split_sqrt_adj_d.iloc[0]
 print "---"
 
 
+### A simple linear regression with a sqrt transformation
 
+X_train=train_split_sqrt_adj_d.drop(["movie_index", "revenue"], axis=1).as_matrix()
+y_train=train_split_sqrt_adj_d["revenue"].as_matrix()
+
+train_ones=np.ones((X_train.shape[0],1))
+
+X_train_sqrt_ones=np.hstack((train_ones, X_train))
+
+
+# (c) Create Regression Model with Statsmodels, and fit, and print results
+
+model_sqrt=sm.OLS(y_train, X_train_sqrt_ones)
+res_sqrt=model_sqrt.fit()
+print "---"
+print "Q: How does the regression summary look like?"
+print res_sqrt.summary()
+print "---"
