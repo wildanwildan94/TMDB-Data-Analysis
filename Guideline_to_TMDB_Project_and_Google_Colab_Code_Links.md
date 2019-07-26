@@ -2,7 +2,7 @@ TMDB Data Analysis Project
 
 A PDF with the key findings of the data analysis and prediction analysis
 can be found at:
-https://github.com/wildanwildan94/TMDB-Data-Analysis-Prediction-Inference/blob/master/TMDB_Revenue_Analysis_Project_C.pdf
+https://github.com/wildanwildan94/TMDB-Data-Analysis/blob/master/TMDB_Data_Revenue_Analysis_Project.pdf
 
 The analysis and code is best viewed with Google Colaboratory Notebooks, as
 given by the links:
